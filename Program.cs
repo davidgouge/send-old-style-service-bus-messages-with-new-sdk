@@ -13,7 +13,7 @@ namespace NewStyle
     {
         static void Main(string[] args)
         {
-            var queueclient = new QueueClient("Endpoint=sb://dgsbtest.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=vl3JincBHyPe17a+ASP/4v8wNT+zt6U+XMcCwRZmVjE=", "messagequeuetest");
+            var queueclient = new QueueClient("connectionstring", "messagequeuetest");
 
             var serializer = new DataContractSerializer(typeof(string));
             Message message;
